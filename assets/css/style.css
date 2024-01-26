@@ -3,17 +3,23 @@
     src: url(../fonts/proximanova_regular.ttf);
 }
 
+:root {
+    --main-bg-color: white;
+    --main-color: black;
+}
+
 body {
     margin: 0;
     font-family: proxima-nova, sans-serif;
     font-style: normal;
     font-weight: 100;
-    color: white;
-    background-color: black;
+    color: var(--main-color);
+    background-color: var(--main-bg-color);
 }
 
 img {
-    max-width: 50%;
+    max-width: 33%;
+    border-radius: 15px;
 }
 
 h1 {
@@ -21,11 +27,11 @@ h1 {
 }
 
 p {
-    font-size: 24px;
+    font-size: 16px;
 }
 
 .vl {
-    border-left: thin solid white;
+    border-left: thin solid var(--main-color);;
     display: inline-block;
 	vertical-align: top;
 }
@@ -51,14 +57,14 @@ p {
 
     padding-top: 30px;
 
-    background-color: black;
+    background-color: var(--main-bg-color);;
 }
 
 .header__logo {
 	font-size: 30px;
 	font-weight: 700;
     text-decoration: none;
-    color: white;
+    color: var(--main-color);;
     font-family: proxima-nova, sans-serif;
 }
 
@@ -79,7 +85,7 @@ p {
 	margin: 0 15px;
 	position: relative;
 
-	color:  white;
+	color:  var(--main-color);;
 	text-decoration: none;
 
 	/* transition:  color .1s linear; */
@@ -88,13 +94,40 @@ p {
 /* Intro */
 
 .intro {
-    padding: 150px 0;
+    padding: 75px 0;
 }
 
 .intro__inner {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+}
+
+.intro__motto {
+    text-decoration: line-through;
+    text-decoration-color: #088CE8;
+    text-decoration-thickness: 0.8rem;
+    color: white;
+    background-color: white;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+
+.contacts__inner {
+    padding: 8px 0;
+}
+
+.contacts__set {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts__contact {
+    margin: 8px 0;
+    padding: 0;
+}
+
+.contact__label {
+    font-size: 20px;
 }
 
 .footer {
@@ -108,7 +141,7 @@ p {
 
     padding-top: 15px;
 
-    background-color: black;
+    background-color: var(--main-bg-color);
     font-size: 8px;
 }
 
