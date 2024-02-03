@@ -25,15 +25,21 @@
         <div class="container">
             <div class="intro__inner">
                 <div>
-                    <h1 class="intro__motto">Привет!</h1>
+                    <h1 class="intro__motto highlight-text">Привет!</h1>
                     <p>Nikita Bychkov.</p>
                     <p>Web Developer.</p>
                     <p>Software Engineer.</p>
                 </div>
-                <img src="assets/images/me-standing.jpeg" alt="me!!!!">
+                <img class="intro__photo" src="assets/images/me-standing.jpeg" alt="me!!!!">
             </div>
         </div>
     </div>
+
+    <marquee truespeed loop="-1" scrolldelay="24">
+        <h1 class="stretched-text highlight-text">
+            Software Engineer | Web Developer | Musician | Funny guy
+        </h1>
+    </marquee>
 
     <div class="about" id="about">
         <div class="container">
@@ -62,11 +68,17 @@
                 <div class="contacts__set">
                     <div class="contacts__contact">
                         <p class="contact__label">Telegram</p>
-                        <a href="https://t.me/WenjiHago" class="contact__link">@WenjiHago</a>
+                        <div class="contact__info">
+                            <img class="contact__icon" src="assets/images/tg.svg" alt="tg">
+                            <a class="contact__link" href="https://t.me/WenjiHago">@WenjiHago</a>
+                        </div>
                     </div>
                     <div class="contacts__contact">
                         <p class="contact__label">Mail</p>
-                        <a href="mailto:bychkovnikita@yandex.ru" class="contact__link">bychkovnikita@yandex.ru</a>
+                        <div class="contact__info">
+                            <img class="contact__icon inverted" src="assets/images/envelope.svg" alt="mail">
+                            <a class="contact__link" href="mailto:bychkovnikita@yandex.ru">bychkovnikita@yandex.ru</a>
+                        </div>
                     </div>
                 </div>
             </div>
