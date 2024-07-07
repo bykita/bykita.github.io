@@ -129,6 +129,24 @@ marquee {
     border-radius: 15px;
 }
 
+.jobs__job {
+    border: gray 1px solid;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.job__header {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    margin: 20px;
+}
+
+.job__header img {
+    width: 200px;
+    max-height: 170px;
+}
+
 /* Contacts */
 
 .contacts__inner {

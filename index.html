@@ -4,9 +4,13 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css"/>
 	<title>bykita</title>
 </head>
 <body>
+    <script type="text/javascript" src="libs/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="libs/slick/slick.min.js"></script>
     <header class="header">
         <div class="container">
             <div class="header__inner">
@@ -61,6 +65,59 @@
         </div>
     </div>
 
+    <div class="jobs" id="jobs">
+        <div class="container">
+            <div class="jobs__inner">
+                <h1>My previous jobs</h1>
+                <div class="jobs__slider">
+                    <div class="jobs__job">
+                        <div class="job__header">
+                            <img src="assets/images/akbars.svg" alt="AkBars Med">
+                        </div>
+                        <p>Health insurance company, provides their services in the Republic of Tatarstan, Russia</p>
+                        <p>Position: Software Engineer</p>
+                        <p>Stack:</p>
+                        <ul>
+                            <li>Delphi</li>
+                            <li>Firebird</li>
+                            <li>Windows</li>
+                        </ul>
+                    </div>
+                    <div class="jobs__job">
+                        <div class="job__header">
+                            <img src="assets/images/fastech.png" alt="Fastech">
+                        </div>
+                        <p>Web development of smart services for urban environments</p>
+                        <p>Position: Fullstack Developer</p>
+                        <p>Stack:</p>
+                        <ul>
+                            <li>JavaScript, Node.js, Perl</li>
+                            <li>PostgreSQL</li>
+                            <li>HTML, CSS</li>
+                            <li>Git, GitHub, GitLab</li>
+                            <li>Grunt, Docker, jQuery, ESLint</li>
+                            <li>Linux, Debian</li>
+                        </ul>
+                    </div>
+                    <div class="jobs__job">
+                        <div class="job__header">
+                            <img src="assets/images/rupost.png" alt="Rupost">
+                        </div>
+                        <p>Mail client for Windows, Astra Linux and other Linux distros</p>
+                        <p>Position: Software Engineer</p>
+                        <p>Stack:</p>
+                        <ul>
+                            <li>JavaScript, C++</li>
+                            <li>HTML, CSS</li>
+                            <li>Git, Gitea</li>
+                            <li>Linux, Debian, Astra Linux</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="contacts" id="contacts">
         <div class="container">
             <div class="contacts__inner">
@@ -92,5 +149,8 @@
             </div>
         </div>
     </footer>
+
+    <script type="text/javascript" src="assets/js/index.js">
+    </script>
 </body>
 </html>
