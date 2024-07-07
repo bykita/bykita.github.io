@@ -119,6 +119,7 @@ marquee {
 }
 
 .intro__motto {
+    font-size: 100px;
     text-decoration: line-through;
     text-decoration-color: #088CE8;
     text-decoration-thickness: 0.8rem;
@@ -131,8 +132,9 @@ marquee {
 
 .jobs__job {
     border: gray 1px solid;
-    border-radius: 25px;
+    border-radius: 10px;
     padding: 10px;
+    margin: 0 10px;
 }
 
 .job__header {
